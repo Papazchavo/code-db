@@ -109,7 +109,7 @@ db.data.messages.push(1) // ❌ TypeScript error
 You can extend lowdb with Lodash (or other libraries). To be able to extend it, we're not using `JSONPreset` here. Instead, we're using lower components.
 
 ```ts
-import { Low } from 'lowdb'
+import { code } from 'codedb'
 import { JSONFile } from 'lowdb/node'
 import lodash from 'lodash'
 
@@ -123,7 +123,7 @@ type Data = {
 }
 
 // Extend Low class with a new `chain` field
-class LowWithLodash<T> extends Low<T> {
+class LowWithLodash<T> extends code<T> {
   chain: lodash.ExpChain<this['data']> = lodash.chain(this).get('data')
 }
 
@@ -165,8 +165,8 @@ Lowdb has two classes (for asynchronous and synchronous adapters).
 #### `new Low(adapter, defaultData)`
 
 ```js
-import { Low } from 'lowdb'
-import { JSONFile } from 'lowdb/node'
+import { code } from 'codedb'
+import { JSONFile } from 'codedb/node'
 
 const db = new Low(new JSONFile('file.json'), {})
 await db.read()
@@ -176,8 +176,8 @@ await db.write()
 #### `new LowSync(adapterSync, defaultData)`
 
 ```js
-import { LowSync } from 'lowdb'
-import { JSONFileSync } from 'lowdb/node'
+import { codeSync } from 'codedb'
+import { JSONFileSync } from '/node'
 
 const db = new LowSync(new JSONFileSync('file.json'), {})
 db.read()
@@ -246,8 +246,8 @@ Adapters for reading and writing JSON files.
 ```js
 import { JSONFile, JSONFileSync } from 'lowdb/node'
 
-new Low(new JSONFile(filename), {})
-new LowSync(new JSONFileSync(filename), {})
+new code(new JSONFile(filename), {})
+new codeSync(new JSONFileSync(filename), {})
 ```
 
 #### `Memory` `MemorySync`
@@ -282,7 +282,7 @@ Adapters for reading and writing text. Useful for creating custom adapters.
 Adapters for easily supporting other data formats or adding behaviors (encrypt, compress...).
 
 ```js
-import { DataFile } from 'lowdb/node'
+import { DataFile } from 'codedb/node'
 new DataFile(filename, {
   parse: YAML.parse,
   stringify: YAML.stringify
@@ -295,7 +295,7 @@ new DataFile(filename, {
 
 ### Third-party adapters
 
-If you've published an adapter for lowdb, feel free to create a PR to add it here.
+If you've published an adapter for codedb, feel free to create a PR to add it here.
 
 ### Writing your own adapter
 
@@ -326,7 +326,7 @@ class SyncAdapter {
 For example, let's say you have some async storage and want to create an adapter for it:
 
 ```js
-import { Low } from 'codedb'
+import { code } from 'codedb'
 import { api } from './AsyncStorage'
 
 class CustomAsyncAdapter {
