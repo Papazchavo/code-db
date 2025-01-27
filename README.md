@@ -110,7 +110,7 @@ You can extend lowdb with Lodash (or other libraries). To be able to extend it, 
 
 ```ts
 import { code } from 'codedb'
-import { JSONFile } from 'lowdb/node'
+import { JSONFile } from 'codedb/node'
 import lodash from 'lodash'
 
 type Post = {
