@@ -1,5 +1,3 @@
-> Simple to use type-safe local JSON database 🦉
-> 
 > If you know JavaScript, you know how to use codedb.
 
 Read or create `db.json`
