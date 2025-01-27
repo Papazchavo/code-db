@@ -1,4 +1,4 @@
-## code.db
+## CODE.DB
 
 > If you know JavaScript, you know how to use codedb.
 
