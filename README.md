@@ -106,7 +106,7 @@ db.data.messages.push(1) // ❌ TypeScript error
 
 ### Lodash
 
-You can extend lowdb with Lodash (or other libraries). To be able to extend it, we're not using `JSONPreset` here. Instead, we're using lower components.
+You can extend codedb with Lodash (or other libraries). To be able to extend it, we're not using `JSONPreset` here. Instead, we're using lower components.
 
 ```ts
 import { code } from 'codedb'
@@ -147,7 +147,7 @@ See [`src/examples/`](src/examples) directory.
 
 ### Presets
 
-Lowdb provides four presets for common cases.
+codedb provides four presets for common cases.
 
 - `JSONFilePreset(filename, defaultData)`
 - `JSONFileSyncPreset(filename, defaultData)`
@@ -156,11 +156,11 @@ Lowdb provides four presets for common cases.
 
 See [`src/examples/`](src/examples) directory for usage.
 
-Lowdb is extremely flexible, if you need to extend it or modify its behavior, use the classes and adapters below instead of the presets.
+codedb is extremely flexible, if you need to extend it or modify its behavior, use the classes and adapters below instead of the presets.
 
 ### Classes
 
-Lowdb has two classes (for asynchronous and synchronous adapters).
+codedb has two classes (for asynchronous and synchronous adapters).
 
 #### `new Low(adapter, defaultData)`
 
@@ -237,7 +237,7 @@ db.data = { key: 'value' }
 
 ## Adapters
 
-### Lowdb adapters
+### codedb adapters
 
 #### `JSONFile` `JSONFileSync`
 
@@ -255,7 +255,7 @@ new codeSync(new JSONFileSync(filename), {})
 In-memory adapters. Useful for speeding up unit tests. See [`src/examples/`](src/examples) directory.
 
 ```js
-import { Memory, MemorySync } from 'lowdb'
+import { Memory, MemorySync } from 'codedb'
 
 new Low(new Memory(), {})
 new LowSync(new MemorySync(), {})
