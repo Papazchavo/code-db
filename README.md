@@ -225,7 +225,7 @@ db.update((data) => {
 
 #### `db.data`
 
-Holds your db content. If you're using the adapters coming with lowdb, it can be any type supported by [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify).
+Holds your db content. If you're using the adapters coming with codedb, it can be any type supported by [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify).
 
 For example:
 
@@ -244,7 +244,7 @@ db.data = { key: 'value' }
 Adapters for reading and writing JSON files.
 
 ```js
-import { JSONFile, JSONFileSync } from 'lowdb/node'
+import { JSONFile, JSONFileSync } from 'codedb/node'
 
 new code(new JSONFile(filename), {})
 new codeSync(new JSONFileSync(filename), {})
@@ -266,7 +266,7 @@ new LowSync(new MemorySync(), {})
 Synchronous adapter for `window.localStorage` and `window.sessionStorage`.
 
 ```js
-import { LocalStorage, SessionStorage } from 'lowdb/browser'
+import { LocalStorage, SessionStorage } from 'codedb/browser'
 new LowSync(new LocalStorage(name), {})
 new LowSync(new SessionStorage(name), {})
 ```
