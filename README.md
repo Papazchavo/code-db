@@ -1,6 +1,6 @@
 ## CODE.DB
 
-# YAPIMCILAR DEVCODE EKİPİ
+# DİSCORD
 
 <table>
   <tr>
@@ -8,6 +8,16 @@
 
 [![Discord Banner](https://api.weblutions.com/discord/invite/devcode/)](https://discord.gg/devcode)
 </table>
+
+**-------------**
+papazchavo.
+ancientcim
+darkdaysdev
+shencim
+onlycmd
+ramalchavo.
+
+**-------------**
 
 > If you know JavaScript, you know how to use codedb.
 
