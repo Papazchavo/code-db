@@ -1,5 +1,3 @@
-## CODE.DB
-
 # DİSCORD
 
 <table>
