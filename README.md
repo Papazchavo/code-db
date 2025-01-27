@@ -1,3 +1,5 @@
+## code.db
+
 > If you know JavaScript, you know how to use codedb.
 
 Read or create `db.json`
