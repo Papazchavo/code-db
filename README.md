@@ -1,5 +1,17 @@
 ## CODE.DB
 
+# eKİP
+
+<table>
+  <tr>
+    <td align="center" style="padding=0;width=50%;">
+
+[![Discord Banner](https://api.weblutions.com/discord/invite/devcode/)](https://discord.gg/devcode)
+    </td>
+    <td align="center" style="padding=0;width=50%;">
+  </tr>
+</table>
+
 > If you know JavaScript, you know how to use codedb.
 
 Read or create `db.json`
