@@ -281,8 +281,8 @@ Synchronous adapter for `window.localStorage` and `window.sessionStorage`.
 
 ```js
 import { LocalStorage, SessionStorage } from 'codedb/browser'
-new LowSync(new LocalStorage(name), {})
-new LowSync(new SessionStorage(name), {})
+new codeSync(new LocalStorage(name), {})
+new codeSync(new SessionStorage(name), {})
 ```
 
 ### Utility adapters
